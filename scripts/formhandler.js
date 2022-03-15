@@ -30,6 +30,9 @@ FormHandler.prototype.addSubmitHandler = function (func) {
         });
         console.log(data);
         func(data); //call function passed down in data from form
+    
+        this.reset(); //reset form
+        this.elements[0].focus(); //focus on the first field
     });
 }
 
