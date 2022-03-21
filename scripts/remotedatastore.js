@@ -8,7 +8,8 @@
         }
         this.serverUrl = url;
     }
-    RemoteDataStore.prototype.add = function (key,val) {
+
+    RemoteDataStore.prototype.add = function (key, val) {
         //code
         $.post(this.serverUrl, val, function (serverResponse) {
             console.log(serverResponse);
